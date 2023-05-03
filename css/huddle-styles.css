@@ -1,0 +1,112 @@
+/* Base styling -------------------- */
+
+* {
+    box-sizing:border-box;
+    margin-top: 0;
+}
+
+body {
+    background: hsl(257, 40%, 49%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    padding-top: 7vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.content-wrapper {
+    flex: 1; /* Creates a full-height content section with sticky footer */
+}
+
+
+/* Mobile first styling ------------ */
+body {
+    padding: 2rem;
+    background: hsl(257, 40%, 49%) url(../images/bg-mobile.svg) no-repeat;
+    background-size: contain;
+    font-size: 1em; /* 16px in most browsers*/
+    font-family: 'Open Sans', sans-serif;
+    color: #dfdfdf;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 10rem;
+    max-width: 70vw;
+    margin-bottom: 3rem;
+    align-self: flex-start;
+}
+
+h1 {
+    margin-top: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+section p {
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.landing-content button {
+    width: 70%;
+    padding: 1rem;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, .2);
+    color: hsl(257, 40%, 49%);
+}
+
+.landing-content button:hover,
+.landing-content button:active {
+    background: hsl(300, 69%, 71%);
+    color:#dfdfdf
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+.social-links {
+    margin: 3rem 0 2rem 0;
+    display: flex;
+}
+
+.social-links a,
+.social-links a:visited {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 .5rem;
+    padding: .5rem .7rem;
+    color: #fff;
+}
+
+.social-links a:hover,
+.social-links a:active {
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+.social-links a:nth-child(1) {
+    padding: .5rem .9rem;
+}
+
+.social-text {
+    display: none;
+}
